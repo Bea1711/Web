@@ -1,0 +1,66 @@
+@import url('https://fonts.google.com/specimen/Noto+Sans+JP');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(imagens/aurora.jpg.jpg);
+    background-size: cover;
+}
+
+.calendario{
+    position: relative;
+    width: 200px;
+    background: white;
+    text-align: center;
+    border-radius: 8px;
+    -webkit-box-reflect: bellow 1px linear-gradient(transparent, transparent, #0004);
+}
+
+.calendario #monthName{
+    position: relative;
+    padding: 5px 10px;
+    background: #FF1493;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.calendario #dayName{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #363636;	
+    text-transform: capitalize;
+}
+
+.calendario #dayNumber{
+    margin-top: 10px;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+}
+
+.calendario #year{
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #363636;	
+    text-transform: capitalize;
+}
+
+.calendario #clock{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
