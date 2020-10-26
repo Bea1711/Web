@@ -8,7 +8,8 @@ document.getElementById("monthName").innerHTML = mes;
 var ano = data.getFullYear();   
 document.getElementById("year").innerHTML = ano;
      
-function JSClock() {
+const JSClock = setInterval(() => {
+
     var tempo = new Date();
     var hora = tempo.getHours();
     var minutos = tempo.getMinutes();
@@ -19,8 +20,7 @@ function JSClock() {
     temp += ((minutos < 10) ? ":0" : ":") + minutos;
     temp += ((segundos < 10) ? ":0" : ":") + segundos;
     temp += (hora >= 12) ? " P.M." : " A.M.";
-    return temp;
-    
-  }   
-  document.getElementById("clock").innerHTML = JSClock();
+    document.getElementById("clock").innerHTML = temp;
+  }, 1000);
+  
 
